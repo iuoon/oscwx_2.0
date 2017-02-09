@@ -25,5 +25,5 @@ For detailed explanation on how things work, checkout the [guide](http://vuejs-t
 
 ##预览效果
 
-![image](https://github.com/iuoon/oscwx_2.0/blob/master/aassets/ab.png)
+![image](https://github.com/iuoon/oscwx_2.0/blob/master/src/assets/ab.png)
 
