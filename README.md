@@ -17,13 +17,16 @@ npm install
 # serve with hot reload at localhost:8080
 npm run dev
 
-# build for production with minification
-npm run build
+# 启动转发层服务
+https://github.com/iuoon/TWServer 
+
+# 修改utils目录api.js的host_addr为自己的TWServer服务地址
 ```
 
 For detailed explanation on how things work, checkout the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
 
+
 ##预览效果
 
-![image](https://github.com/iuoon/oscwx_2.0/blob/master/aassets/ab.png)
+![image](https://github.com/iuoon/oscwx_2.0/blob/master/src/assets/ab.png)
 
