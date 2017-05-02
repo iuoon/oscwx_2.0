@@ -4,16 +4,21 @@ import VueRouter from 'vue-router'
 import App from './App'
 import Home from './components/Home'
 import NewsDetail from './components/NewsDetail.vue'
+import MySettings from './components/MySettings.vue'
 
 Vue.use(VueRouter)
 
 const routes = [{
   path: '/',
   component: Home
-},
+  },
   {
   path: '/newsdetail',
   component: NewsDetail
+  },
+  {
+    path: '/mysettings',
+    component: MySettings
   }
 ]
 

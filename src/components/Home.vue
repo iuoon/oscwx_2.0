@@ -8,7 +8,6 @@
     <div v-if="index === 1"><blog-list></blog-list></div>
     <div v-if="index === 2"><question-list></question-list></div>
     <div v-if="index === 3"><event-list></event-list></div>
-    <app-footer></app-footer>
   </div>
 </template>
 <style>
@@ -20,7 +19,6 @@
 <script>
   import { Tab,TabItem } from 'vux'
   import AppHeader from './Header'
-  import AppFooter from './Footer'
   import NewsList from './NewsList'
   import BlogList from './BlogList'
   import QuestionList from './QuestionList'
@@ -34,7 +32,6 @@
       Tab,
       TabItem,
       AppHeader,
-      AppFooter,
       NewsList,
       BlogList,
       QuestionList,
