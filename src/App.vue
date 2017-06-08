@@ -14,6 +14,7 @@ body {
 </style>
 <script>
   import AppFooter from './components/Footer'
+
   export default{
     components: {
       AppFooter

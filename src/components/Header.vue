@@ -1,11 +1,7 @@
 <template>
-  <tabbar class="tabbar">
-    <div class="title">{{tag}}</div>
-    <tabbar-item class="search">
-      <img slot="icon" src="../assets/image/actionbar_search_icon.png">
-    </tabbar-item>
-  </tabbar>
-
+  <div>
+    <x-header :left-options="{showBack: false}" style="background-color:#00CC66;">{{tag}}</x-header>
+  </div>
 </template>
 <style>
   .tabbar{
@@ -25,18 +21,20 @@
   }
 </style>
 <script>
-  import { Tabbar,TabbarItem } from 'vux'
+  import { Tabbar,TabbarItem,XHeader} from 'vux'
 
   export default{
     name: 'AppHeader',
     data (){
         return{
-          tag:'资讯'
+          tag:'资讯',
+          showMenus: false
         }
     },
     components: {
       Tabbar,
       TabbarItem,
+      XHeader
     },
     methods: {
     },

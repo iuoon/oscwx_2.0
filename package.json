@@ -10,11 +10,12 @@
   },
   "dependencies": {
     "fastclick": "^1.0.6",
+    "jquery": "^1.8.3",
     "vue": "^2.1.0",
     "vue-router": "^2.0.1",
     "vuex": "^2.1.1",
     "vuex-i18n": "^1.3.1",
-    "vux": "^2.2.1",
+    "vux": "^2.3.4",
     "whatwg-fetch": "^2.0.2"
   },
   "devDependencies": {
@@ -53,7 +54,7 @@
     "yaml-loader": "^0.4.0",
     "less": "^2.7.1",
     "less-loader": "^2.2.3",
-    "vux-loader": "^1.0.24"
+    "vux-loader": "^1.0.58"
   },
   "engines": {
     "node": ">= 4.0.0",

@@ -1,9 +1,6 @@
 <template>
   <div>
     <div>
-
-    </div>
-    <div>
       <img class="img_1" src="../assets/image/bg_cir.png">
       <div class="news-wrap">
         <cell title="我的消息" is-link>

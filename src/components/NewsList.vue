@@ -1,16 +1,19 @@
 <template>
   <div>
     <swiper :list="imgs" auto style="width:100%;margin:0 auto;" height="120px" dots-class="custom-bottom" dots-position="center"></swiper>
-    <scroller lock-x scrollbar-y height="500px" :bounce=false :scrollbarY="false" ref="scroller">
-      <div class="news-wrap">
-        <cell v-for="x in Objlist"  :title="x.title" :link="{path: '/newsdetail',query:{id:x.id,tag:'资讯'}}" :inline-desc='x.body'>
-          <img class="ic_img"  slot="icon" src="../assets/image/ic_label_today.png">
-          <div>
-            <span class="pubdate">{{x.pub_date}}</span>
-          </div>
-        </cell>
-      </div>
-    </scroller>
+    <div>
+      <scroller lock-x scrollbar-y height="250px" :bounce=false :scrollbarY="false" ref="scroller">
+        <div class="news-wrap-list">
+          <cell v-for="x in Objlist"  :title="x.title" :link="{path: '/newsdetail',query:{id:x.id,tag:'资讯'}}" :inline-desc='x.body'>
+            <img class="ic_img"  slot="icon" src="../assets/image/ic_label_today.png">
+            <div>
+              <span class="pubdate">{{x.pub_date}}</span>
+            </div>
+          </cell>
+        </div>
+      </scroller>
+    </div>
+
   </div>
 </template>
 <style>
@@ -28,7 +31,7 @@
   .weui_cell_bd.weui_cell_primary{
     padding-left:5px;
   }
-  .news-wrap {
+  .news-wrap-list {
     height: 2800px;
     overflow: hidden;
   }
@@ -40,6 +43,7 @@
 <script>
   import { Group, Cell,Swiper,Scroller,Divider } from 'vux'
   import { getList } from '../utils/api'
+
 
 
   const imgList = [
@@ -101,7 +105,7 @@
               var minute=parseInt(minutes);
               news_list[i].pubDate=minute+ "分钟以前"
             }
-
+            news_list[i].title="  "+news_list[i].title;
             this.Objlist.push(news_list[i]);
           }
 
